@@ -1,0 +1,13 @@
+CREATE database MyCompany;
+drop database MyCompany;
+use MyCompany;
+CREATE TABLE employees(
+	EmployeeId INT PRIMARY KEY,
+    EmployeeName VARCHAR(50),
+    EmployeeDept VARCHAR(60),
+    salary DOUBLE NOT NULL
+);
+INSERT INTO employees VALUES(01,"VISHNU","Tester",90000);
+INSERT INTO employees VALUES(02,"NANI","Developer",90000);
+INSERT INTO employees VALUES(03,"VARDHAN","Developer",90000);
+SELECT * FROM employees;
